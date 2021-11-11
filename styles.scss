@@ -19,6 +19,9 @@ h1{
 #calculator{
 
   display: grid;
+  margin-left: 250px ;
+  height: 300px;
+  width: 200px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   border: 3px solid $primarycolor;
@@ -30,29 +33,49 @@ h1{
   #calculator__clear{
     grid-row: 2/3;
     grid-column: 1/5;
+    &:hover{
+      background-color: $primarycolor;
+    }
   }
   .calculator__button{
     font-family: $primaryfont;
     background-color: $quaternarycolor;
     color: $tertiarycolor;
-    font-size: 20px;
+    font-size: 25px;
+    &:hover{
+      background-color: $primarycolor;
+    }
   }
   .calculator__operator{
     font-family: $primaryfont;
-    font-size: 20px;
+    font-size: 25px;
     background-color: $secondarycolor;
     color: $tertiarycolor;
+    &:hover{
+      background-color: $primarycolor;
+    }
+  }
+  #calculator__equals{
+    font-family: $primaryfont;
+    font-size: 25px;
+    background-color: $secondarycolor;
+    color: $tertiarycolor;
+    &:hover{
+      background-color: $primarycolor;
+    }
+
   }
 }
 
 
 
 // desktop
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   #calculator{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 500px;
+    width: 350px;
+    
 
     &:nth-child(1){
       grid-row: 1/2;
