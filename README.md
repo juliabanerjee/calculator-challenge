@@ -16,6 +16,12 @@ I selected the relevant button/buttons using document.querySelector and then use
 
 3b. Storing the sums:
 
+To store the sums, I used .addEventListener again to trigger the numbers to be saved when an operator button was clicked. In order to do this, I created three variables for firstNumber, operator and secondNumber which I left as empty strings that I would be redefined when specific buttons were clicked. When an operator button such as +, /, * or - is clicked the first number is stored under the firstNumber variable. I did the same for the equals button which meant that the operator and the second number were stored under the secondNumber variable. I then sliced the second number using .slice so the string would just contain the number. Using .parseFloat on the firstNumber and secondNumber variables and creating if and else if statements for each operator, my calculator was able to finally calculate basic sums.
+
+Potential Improvements:
+
+- I would like to try modifying the calculator so that numbers and operators are stored in an array. This would also make it easier for me to created a delete button in addition to my clear button so that one number could be deleted from a sum instead of clearing the whole display.
+
 
 
 
