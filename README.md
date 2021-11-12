@@ -20,7 +20,11 @@ To store the sums, I used .addEventListener again to trigger the numbers to be s
 
 Potential Improvements:
 
-- I would like to try modifying the calculator so that numbers and operators are stored in an array. This would also make it easier for me to created a delete button in addition to my clear button so that one number could be deleted from a sum instead of clearing the whole display.
+- I would like to try modifying the calculator so that numbers and operators are stored in an array. This would also make it easier for me to created a delete button in addition to my clear button so that one number could be deleted from a sum instead of clearing the whole display. This would require .pop.
+
+- I would like to eventually turn it into a scientific calculator that could perfom more complex tasks such as finding the square root of a number.
+
+- I would like to have the whole sum displaying on the screen so the user could see what numbers they had typed.
 
 
 
