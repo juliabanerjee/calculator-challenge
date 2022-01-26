@@ -1,0 +1,22 @@
+{
+  "name": "calculator-project",
+  "version": "1.0.0",
+  "description": "1. Intro: In this challenge I designed and created a basic calculator. This calculator can add, subtract, divide and multiply.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliabanerjee/calculator-challenge.git"
+  },
+  "author": "JB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juliabanerjee/calculator-challenge/issues"
+  },
+  "homepage": "https://github.com/juliabanerjee/calculator-challenge#readme",
+  "devDependencies": {
+    "cypress": "^9.0.0"
+  }
+}
