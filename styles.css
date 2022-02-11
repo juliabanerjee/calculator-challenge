@@ -10,67 +10,72 @@ h1 {
   font-family: "Fjalla One", sans-serif;
   background-color: #131313;
   color: #62630D;
+  width: 100vw;
 }
 
-#calculator {
+.calculator__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calculator__container .calculator {
   display: grid;
-  margin-left: 250px;
   height: 300px;
   width: 200px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   border: 3px solid #131313;
 }
-#calculator #calculator__answerbox {
+.calculator__container .calculator #calculator__answerbox {
   grid-row: 1/2;
   grid-column: 1/5;
 }
-#calculator #calculator__clear {
+.calculator__container .calculator #calculator__clear {
   grid-row: 2/3;
   grid-column: 1/5;
 }
-#calculator #calculator__clear:hover {
+.calculator__container .calculator #calculator__clear:hover {
   background-color: #131313;
 }
-#calculator .calculator__button {
+.calculator__container .calculator .calculator__button {
   font-family: "Fjalla One", sans-serif;
   background-color: #949494;
   color: #d8db07;
   font-size: 25px;
 }
-#calculator .calculator__button:hover {
+.calculator__container .calculator .calculator__button:hover {
   background-color: #131313;
 }
-#calculator .calculator__operator {
+.calculator__container .calculator .calculator__operator {
   font-family: "Fjalla One", sans-serif;
   font-size: 25px;
   background-color: #62630D;
   color: #d8db07;
 }
-#calculator .calculator__operator:hover {
+.calculator__container .calculator .calculator__operator:hover {
   background-color: #131313;
 }
-#calculator #calculator__equals {
+.calculator__container .calculator #calculator__equals {
   font-family: "Fjalla One", sans-serif;
   font-size: 25px;
   background-color: #62630D;
   color: #d8db07;
 }
-#calculator #calculator__equals:hover {
+.calculator__container .calculator #calculator__equals:hover {
   background-color: #131313;
 }
 
 @media only screen and (min-width: 768px) {
-  #calculator {
+  .calculator__container .calculator {
     display: grid;
     height: 500px;
     width: 350px;
   }
-  #calculator:nth-child(1) {
+  .calculator__container .calculator:nth-child(1) {
     grid-row: 1/2;
     grid-column: 1/5;
   }
-  #calculator:nth-child(2) {
+  .calculator__container .calculator:nth-child(2) {
     grid-row: 2/3;
     grid-column: 1/5;
   }

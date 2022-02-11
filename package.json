@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/juliabanerjee/calculator-challenge#readme",
   "devDependencies": {
-    "cypress": "^9.0.0"
+    "cypress": "^9.0.0",
+    "gh-pages": "^3.2.3"
   }
 }
